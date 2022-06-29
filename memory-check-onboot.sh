@@ -1,6 +1,6 @@
 #!/bin/bash
-counterpath="/mnt/apps/scripts/mem-check-counter.log"
-logpath="/mnt/apps/scripts/mem-check-onboot-logs.log"
+counterpath="/mnt/apps/scripts/memory-check-onboot-counter.log"
+logpath="/mnt/apps/scripts/memory-check-onboot.log"
 logmsg=$(date +"%D %T")" || "$(uptime)
 echo $logmsg
 echo $logmsg>> $logpath
