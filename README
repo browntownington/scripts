@@ -1,4 +1,8 @@
 memory-check-onboot.sh
 
-set $minmem variable to slighly less than the amount of ram in the system. This is in megabytes. 
-For example my system has 16gb ram 
+My server has 16gb of RAM. But for some reason when the system boots it only sees 8gb. If I reboot the system several times it will eventually show the enitre 16gb.
+If you configure this script to run onboot. It will check the RAM vs desired(actual) RAM and it will reboot the system up to 10 times in attempt to get desried RAM.
+set $minmem variable to slighly less than the amount of RAM in the system. This is in megabytes. 
+For example my system has 16gb (15976.9 mb) RAM so I have this set to 15000.
+The script will create a counter file to remeber how many times the system has reboot.
+The script will also create a log file so you can check how many times, the time, and what ram was detected.
