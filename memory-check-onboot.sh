@@ -6,6 +6,7 @@ logmsg=$(date +"%D %T")" || "$(uptime)
 echo $logmsg
 echo $logmsg>> $logpath
 counter=$(<$counterpath)
+echo $counter
 ((counter++))
 echo $counter > $counterpath
 mem=$(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE) / (1024 * 1024)))
