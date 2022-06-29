@@ -1,1 +1,4 @@
-test
+memory-check-onboot.sh
+
+set $minmem variable to slighly less than the amount of ram in the system. This is in megabytes. 
+For example my system has 16gb ram 
